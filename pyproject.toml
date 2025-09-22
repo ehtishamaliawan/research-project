@@ -21,3 +21,9 @@ dependencies = [
 
 [project.scripts]
 rogue-ap-detector = "rogue_ap_detector.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+include = ["rogue_ap_detector*"]
